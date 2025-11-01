@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SystemMusic 🎵</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🎧 SystemMusic</div>
+    <button id="albumBtn" onclick="showAlbums()">🎬 Albums</button>
+  </header>
+
+  <main>
+    <section id="albumSection" class="album-section hidden">
+      <h2>🎬 Select a Movie Album</h2>
+      <div id="albumList" class="album-list"></div>
+    </section>
+
+    <section id="songSection" class="hidden">
+      <h2 id="movieTitle"></h2>
+      <img id="movieCover" src="" class="movie-cover" />
+      <audio id="audioPlayer" controls></audio>
+
+      <div class="controls">
+        <button onclick="prevSong()">⏮ Prev</button>
+        <button onclick="togglePlay()">▶️ / ⏸</button>
+        <button onclick="nextSong()">⏭ Next</button>
+        <button id="likeBtn" onclick="toggleLike()">❤️ Like</button>
+      </div>
+
+      <div id="songList"></div>
+      <button onclick="backToAlbums()">🔙 Back to Albums</button>
+    </section>
+
+    <section class="favorites">
+      <h2>💚 Favorites</h2>
+      <div id="favoritesList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SystemMusic. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
