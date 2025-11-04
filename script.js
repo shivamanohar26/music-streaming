@@ -17,6 +17,15 @@ const albums = [
       { name: "Fear", src:  "songs/movie2-song3.mp3" },
     ]
   },
+  {
+    title: "Dude",
+    cover: "images/dude.jpeg",
+    songs: [
+      { name: "Nee Gundalo na", src: "songs/movie4.mp3"},
+     
+    ]
+  },
+   
   // Add 8 more movies similarly
   {
     title: "Beast",
@@ -28,6 +37,7 @@ const albums = [
     ]
   },
 ];
+
 
 let currentAlbum = null;
 let currentSongIndex = 0;
